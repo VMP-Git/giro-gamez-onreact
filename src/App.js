@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import GameList from "./components/GameList";
 import GameDetails from "./components/GameDetails";
 import Navbar from "./components/Navbar";
+import ScrollToTopButton from "./components/ScrollToTopButton"; // Import ScrollToTopButton
 import "./App.css";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h1>Giro Gamez</h1>
+          {/* <h1>Giro Gamez</h1> */}
           <Navbar setSelectedGenre={setSelectedGenre} />
         </header>
         <Routes>
@@ -23,6 +24,7 @@ function App() {
           />
           <Route path="/game/:id" element={<GameDetails />} />
         </Routes>
+        <ScrollToTopButton /> {/* Add ScrollToTopButton */}
       </div>
     </Router>
   );
