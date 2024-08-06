@@ -15,6 +15,11 @@ header {
 }
 
 .navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  border-radius: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
